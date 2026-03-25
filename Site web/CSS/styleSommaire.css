@@ -1,0 +1,218 @@
+body{
+    background-color: #ffffff;
+    color: #002333;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 0.5px;
+    
+    font-size: 16px;
+    margin: 0;
+}
+
+header{
+    background-color: #002333;
+    position: sticky;
+    top: 0;
+    height: auto;
+    z-index: 1000;
+    display: flex;
+
+    img{
+        margin-left: 30px;
+        margin-top: 10px;
+        height: 50px;
+        width: auto;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+        /* border: blue solid 5px; */
+        justify-content: space-between;
+    }
+    li{
+        list-style: none;
+        margin-right: 5%;
+    }
+    /* li::after{
+        content: '';
+        position: absolute;
+        background-color: #F24822;
+        height: 3px;
+        width: 10%;
+        bottom: 0;
+    } */
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    li:hover{
+        transform: scale(1.15);
+    }
+
+    a:hover{
+        color: #B4BEC9;
+    }
+    
+    
+    
+
+}
+
+footer{
+    background-color: #002333;
+    bottom : 0;
+    padding: 20px 10px;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 16px;
+    margin-top: 90px;
+
+
+    img{
+        height: 40px;
+        width: auto;
+        border-radius: 5px;
+    }
+    .line{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+    a:hover{
+        color: #B4BEC9;
+        text-decoration: underline;
+    }
+    a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    li{
+        margin-top: 15px;
+        list-style-type: none;
+    }
+    .small{
+        margin-left: 20px;
+    }
+    .big{
+        font-size: 20px;
+    }
+    .cv{
+        color: #159A9C;
+        text-decoration: none;
+    }
+    .cv:hover{
+        color: #DEEFE7;
+        text-decoration: underline;
+    }
+}
+
+.part3{
+    display: inline-block;
+    margin-top: 58px;
+    width: 100%;
+
+    .card {
+      position: relative;
+      width: 42%;
+      height: 42%;
+      overflow: hidden;
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-block;
+      margin-left: 4%;
+      margin-right: 2%;
+    }
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease;
+    }
+    .overlay h2 {
+      color: #FFFFFF;
+      transition: transform 0.3s ease, font-size 0.3s ease;
+    }
+    .card:hover .overlay {
+      background: rgba(0, 0, 0, 0.3);
+    }
+    .card:hover .overlay h2 {
+      color: #DEEFE7;
+      transform: scale(1.2);
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+/* Description projet */
+.part4{
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+    .left{
+        background-color: #B4BEC9;
+        padding: 10px 20px;
+    }
+    .right{
+        background-color: #B4BEC9;
+        padding: 10px 20px;
+    }
+    .card {
+      position: relative;
+      width: 42%;
+      height: 40%;
+      overflow: hidden;
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-block;
+      margin-left: 4%;
+      margin-right: 2%;
+    }
+    .infos{
+        margin-top: 10px;
+        margin-left: 0.5%;
+        display: grid;
+        grid-template-columns: 1fr 7fr 1fr 4fr;
+    }
+    .boite{
+        display: inline-block;
+    }
+    img{
+        height: auto;
+        width: 30px;
+    }
+    p{
+        text-align: justify;
+    }
+}
+
+.titre{
+    /* margin-top: 85px; */
+    place-self: center;
+    /* background-color: brown; */
+    background: linear-gradient( 180deg,#B4BEC9, #ffffff);
+    width: 100%;
+    height: auto;
+    padding: 55px 0px;
+
+    h1{
+        place-self: center;
+        font-size: 65px;
+        /* font-family:; */
+    }
+}
