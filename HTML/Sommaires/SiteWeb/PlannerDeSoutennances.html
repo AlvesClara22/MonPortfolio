@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" charset="UTF-8">
+    <link rel="stylesheet" href="../../../CSS/styleProjet.css">
+
+    <title>Planner de soutennances</title>
+</head>
+<body>
+    <header>
+        <a href="../../../index.html"><img src="../../../Image/Image_accueil/Image2.png"></a>
+        <ul>
+            <li><a href="../SommaireJeuxVideo.html" class="big">Jeux vidéo</a></li>
+            <li><a href="../SommaireSiteWeb.html" class="big">Site web</a></li>
+            <li><a href="../SommaireAutre.html" class="big">Autres</a></li>
+            <li><a href="../../cv.html">CV</a></li>
+        </ul>
+    </header>
+
+        <!-- Image de présentation -->
+        <div class="part1">
+            <div class="card">
+                <img src="../../../Image/Image_accueil/AcrossTheStars.jpg">
+                <div class="overlay">
+                    <a class="bouton" href="../../../Across the Stars.zip" download><h2>Planner de soutennances</h2></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Infos essentielles -->
+        <div class="part2">
+            <div class="card">
+                <img src="../../../Image/ImageProjet1/calendrier.png" alt="calendrier">
+                <p>12/2023 - 5/2024</p>
+            </div>
+            <div class="card">
+                <img src="../../../Image/ImageProjet1/horloge.png" alt="horloge">
+                <p>30 heures</p>
+            </div>
+            <div class="card">
+                <img src="../../../Image/ImageProjet1/groupe.png" alt="groupe">
+                <p>4 personnes</p>
+            </div>
+            <div class="card">
+                <img src="../../../Image/ImageProjet1/langage.png" alt="langage">
+                <p>Python</p>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="part3">
+            <p><span class="bigger">E</span>n terminale, j’ai participé aux trophées NSI, c’est une compétition nationale qui récompense les meilleurs projets réalisés par des terminales en Python et/ou en SQL. 
+                Avec trois autres personnes, nous avons choisi de créer en Python, un jeu vidéo de type « Shoot them up ». 
+                C’est-à-dire un jeu où l’on contrôle un petit vaisseau qui doit détruire des vaisseaux ennemis qui lui foncent et/ou qui lui tirent dessus. 
+                Il nous aura fallu environ 30 heures réparties sur plusieurs semaines pour aboutir à notre jeu final, Across the star.<br/><br/>
+            Across the Star est alors un shoot them up où le joueur doit détruire des vaisseaux ennemis qui se déplacent aléatoirement dans une zone et qui lui tire dessus. 
+            Les ennemis vont apparaître à intervalle régulier donc le joueur doit les détruire au fur et à mesure pour ne pas être surchargé. 
+            Il possède 3 vies ce qui lui permet de survivre à 3 tirs ennemis. Après que 10 ennemis sont apparus, un boss plus grand et plus fort va apparaître. 
+            Le but du joueur est de faire le meilleur score ou de rester en vie le plus longtemps.</p>
+        </div>
+
+        <!-- Image 1 + Description Missions-->
+        <div class="part4">
+            <img src="../../../Image/Image_accueil/AcrossTheStars.jpg">
+            
+            <p><span class="bigger">T</span>out devait être créé, des graphiques jusqu’au code. 
+                Notre première tâche était de dresser une liste de ce que nous devions réaliser, puis de nous répartir les tâches. 
+                Pour ma part, je me suis occupée de développer l’accueil, de gérer toutes les collisions, de mettre en place un chronomètre et un système de vie.<br/><br/>
+            En terminale, je ne connaissais toujours pas Git, donc nous nous transmettions les fichiers sur un cloud et modifions les nouveaux fichiers sans les casser pour ajouter notre bout de code. 
+            La conception du projet a alors débuté.</p>
+        </div>
+
+        <!-- Description des étapes -->
+        <div class="part5">            
+
+            <div class="arrow-up">
+                <div class="corp"></div>
+                <div class="tete"></div>
+            </div>
+                    
+            <div class="block">
+                <h2><strong class="mine">Affichage d’une première fenêtre</strong></h2>
+                <p>Pour prendre en main et comprendre le fonctionnement de Pygame, nous avons tous ensemble réalisé une première fenêtre d’affichage pour notre jeu.<br/><br/></p>
+                <h2><strong class="mine">Développement et production des graphique de l’accueil</strong> – Créations des classes joueur et ennemi – Réalisation des graphiques – Ajout d’un fond en mouvement</h2>
+                <p>Tout d’abord, je me suis occupée de faire les graphiques de l’accueil avec l’outil Make 8-Bit Art. J’ai ensuite disposé dans la fenêtre les différents éléments. 
+                    Pour finir j’ai transformé des images en boutons pour pouvoir accéder au jeu ou fermer la fenêtre.<br/><br/></p>
+                <h2><strong class="mine">Gestion des collisions</strong> – Gestion des déplacements des différents vaisseaux – Production graphique du boss</h2>
+                <p>Je me suis occupée de toutes les collisions : tir joueur avec vaisseau ennemi, tir ennemi avec vaisseau joueur, tir joueur avec vaisseau boss et tir boss avec vaisseau boss. 
+                    Pour gérer ces collisions, j’ai utilisé la position de chaque image et vérifié si les deux étaient superposées ou se touchaient, lorsque c’était le cas j’effectuais l’action qui en découle.<br/><br/></p>
+                <h2><strong class="mine">Mise en place du système de vie</strong> – Création de la classe pour le Boss</h2>
+                <p>Je me suis d’abord occupé de l’affichage des vies pour qu’elles soient bien placées au bon endroit. 
+                    J’ai ensuite déterminé le nombre de vie à afficher en fonction des points de vie restant du joueur.</p>
+                <h2><strong class="mine">Mise en place du chronomètre</strong> – Affichage du « Game over »</h2>
+                <p>J’ai utilisé pygame.time pour afficher et lancer le chrono. 
+                    Au début, j’ai rencontré un problème avec le nom de décimal affiché, j’ai pu régler ce problème en changeant l’ordre des calculs.</p>
+            </div>
+        </div>
+
+        <!-- Outils utilisés -->
+        <div class="part6">
+            <h2>Outils Utilisés</h2>
+            <ul>
+                <li>Pygame</li>
+                <p>Une librairie pour développer des jeux vidéo en Python.</p>
+                <li>Spyder</li>
+                <p>Un IDE Python</p>
+                <li>Make 8-bit art</li>
+                <p>Outil de dessin pixel.</p>
+            </ul>
+        </div>
+
+        <!-- Liste des compétences + image 2 -->
+        <div class="part7">
+            <div class="text">
+                <h2>Compétences</h2>
+                <ul>
+                    <li>Python</li><br/>
+                    <li>Réflexion logique</li><br/>
+                    <li>Travail d'équipe</li><br/>
+                    <li>Patience</li>
+                </ul>
+            </div>
+            
+
+            <img src="../../../Image/Image_accueil/AcrossTheStars.jpg">
+        </div>
+
+        <!-- Image 3 + Démarche réflective -->
+        <div class="part4">
+            <img src="../../../Image/Image_accueil/AcrossTheStars.jpg">
+            <p><span class="bigger">C</span>e projet a été mon véritable premier projet en équipe, j’y ai découvert les difficultés à se coordonner mais j’ai pu mettre en pratique toutes mes connaissances en Python et aussi en acquérir de nouvelles. <br/><br/>
+            Mais je reste un peu déçue que nous n’ayons pas eu le temps de mettre en place un système d’enregistrement du meilleur score. 
+            Ce projet m’a aussi permis d’accroître mon intérêt pour la programmation et plus particulièrement pour le jeu vidéo.</p>
+        </div>
+
+
+    <footer>
+        <div class="column1">
+            <div class="line">
+                <div><a href="https://www.linkedin.com/in/clara-alves22/"><img src="../../../Image/Image_accueil/LinkedIn.png"></a></div>
+            <div><p>LinkedIn</p></div>
+            </div>
+            <div class="line">
+                <div><a href="https://gamejolt.com/@Clalves/games"><img src="../../../Image/Image_accueil/GameJolt.png"></a></div>
+            <div><p>GameJolt</p></div>
+            </div>
+            <div><p class="right">Email : clara63.alves@gmail.com</p></div>
+            <div><p class="right">Vous trouverez mon CV dans la page <a href="../../cv.html" class="cv">CV</a><br></p></div> 
+        </div>
+
+
+        <div class="column2">
+            <ul>
+                <li><a href="../SommaireJeuxVideo.html" class="big">Jeux vidéo</a></li>
+                <li><a href="../JeuxVideo/LesRouagesDuDestin.html" class="small">Les rouages du destin</a></li>
+                <li><a href="../JeuxVideo/LePotager.html" class="small">Le potager</a></li>
+                <li><a href="../JeuxVideo/AcrossTheStars.html" class="small">Across the stars</a></li>
+            </ul>
+        </div>
+
+        <div class="column3">
+            <ul>
+                <li><a href="../SommaireSiteWeb.html" class="big">Site web</a></li>
+                <li><a href="PlannerDeSoutennances.html" class="small">Planner de soutenances</a></li>
+                <li><a href="Vapeur.html" class="small">Vapeur</a></li>
+                <li><a href="BarAChat.html" class="small">Bar à chats</a></li>
+            </ul>
+        </div>
+
+        <div class="column4">
+            <ul>
+                <li><a href="../SommaireAutre.html" class="big">Autres</a></li>
+                <li><a href="Vapeur.html" class="small">Base de données</a></li>
+                <li><a href="Vapeur.html" class="small">Application météo</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
