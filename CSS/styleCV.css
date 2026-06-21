@@ -115,9 +115,9 @@ footer{
 .part3{
     display: flex;
     margin-top: 58px;
-    width: 80%;
-    justify-content: space-between;
+    gap: clamp(50px, 15vw, 250px);
     align-self: center;
+    justify-content: center;
 
     .place{
         width: 28%;
